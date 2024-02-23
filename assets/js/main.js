@@ -14,8 +14,9 @@ let next = document.querySelector(".next")
 
 for (let i = 0; i < imageList.length; i++) { // ciclo per lo scorrimento
     let singleSlide = imageList[i];
-    
     console.log(singleSlide); 
+
+    const slideMarkup = `<img class="active" src="./assets/img/${singleSlide}" alt="">`
 }
 
 
