@@ -29,4 +29,9 @@ console.log(prev, next);
 next.addEventListener("click", function(){
     activeImage++
     console.log(activeImage);
+
+    let actualImage = document.querySelector("img.active")
+    console.log(actualImage);
+
+    actualImage.classList.remove("active")
 })
