@@ -34,4 +34,12 @@ next.addEventListener("click", function(){
     console.log(actualImage);
 
     actualImage.classList.remove("active")
+
+    let allSlides = document.querySelectorAll(".slides img")
+    console.log(allSlides);
+
+    allSlides[activeImage].classList.add("active")
+
+
+
 })
