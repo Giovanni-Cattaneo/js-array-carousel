@@ -22,10 +22,11 @@ for (let i = 0; i < imageList.length; i++) { // ciclo per lo scorrimento
 
     slidesElement.insertAdjacentHTML("beforeend", slideMarkup)
 
-    next.addEventListener("click", function(){
-        
-    })
-
 }
 
+console.log(prev, next);
 
+next.addEventListener("click", function(){
+    activeImage++
+    console.log(activeImage);
+})
