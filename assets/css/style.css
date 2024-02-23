@@ -4,10 +4,26 @@
     margin: auto;
     position: relative;
 
+    .controls{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+
+        .fa-solid{
+            font-size: 2rem;
+        }
+    }
+
     .slides{
 
         & img{
             width: 100%;
+        }
+
+        & img:not(.active){
+            display: none;
         }
     }
 }
