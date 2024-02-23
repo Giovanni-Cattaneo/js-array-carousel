@@ -6,7 +6,7 @@ console.log(imageList);
 
 let activeImage = 0;
 
-let slidesEelement = document.querySelector(".slides")
+let slidesElement = document.querySelector(".slides")
 
 let prev = document.querySelector(".prev")
 let next = document.querySelector(".next")
@@ -16,7 +16,16 @@ for (let i = 0; i < imageList.length; i++) { // ciclo per lo scorrimento
     let singleSlide = imageList[i];
     console.log(singleSlide); 
 
-    const slideMarkup = `<img class="active" src="./assets/img/${singleSlide}" alt="">`
+    const slideMarkup = `<img class="${i === activeImage ? "active" : ""}" src="./assets/img/${singleSlide}" alt="">`
+
+    console.log(slideMarkup);
+
+    slidesElement.insertAdjacentHTML("beforeend", slideMarkup)
+
+    next.addEventListener("click", function(){
+        
+    })
+
 }
 
 
