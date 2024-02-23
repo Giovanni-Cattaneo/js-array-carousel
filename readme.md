@@ -12,7 +12,14 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 
 
+## steps
+- posizioniamo container immagini e controlli in plain html con minimo stile
+- creaimo un array in js che elenchi le immagini
+- cicliamo cosi da permetterci di scorrere le immagini
+- inseriamo una funzione al click del mouse
+- al click del mouse spostare la classe di immagine active sull'immagine seguente
 
+## tools
 
 
 
