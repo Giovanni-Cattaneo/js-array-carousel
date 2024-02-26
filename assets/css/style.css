@@ -19,12 +19,12 @@
     .slides{
 
         .active{
-           
+           max-height: 350px;
         }
 
         & img{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center;
         }
 
