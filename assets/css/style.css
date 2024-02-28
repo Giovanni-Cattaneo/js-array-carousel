@@ -19,13 +19,13 @@
     .slides{
 
         .active{
-           max-height: 350px;
+           max-height: 300px;
         }
 
         & img{
             width: 100%;
-            object-fit: contain;
-            object-position: center;
+            object-fit: cover;
+            object-position: top;
         }
 
         & img:not(.active){
